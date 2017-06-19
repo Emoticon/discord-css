@@ -37,12 +37,14 @@
     border-radius: 10%
 
     .sidebar-region
-        border-radius: 5px
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
 
     .content-region
         min-width: 770px
         max-width: 770px
-        border-radius: 5px
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
 
     @media screen and (max-width: 1100px)
         .content-region
@@ -52,5 +54,6 @@
     .content-region-scroller
         overflow-y: auto
 
-    .content-column
+    .content-column, .content-column.default
         min-height: 0
+        padding: 60px 40px 0
